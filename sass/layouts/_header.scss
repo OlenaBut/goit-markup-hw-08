@@ -1,0 +1,31 @@
+/* header */
+
+.header {
+    border-bottom: 1px solid var(--header-border);
+}
+
+.header__container {
+    display: flex;
+}
+
+.header__mail,
+.header__tel {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+}
+
+.header__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header__icon:hover,
+.header__icon:focus {
+    fill: var(--accent-color);
+}

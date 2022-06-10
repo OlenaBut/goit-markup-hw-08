@@ -1,0 +1,40 @@
+/*цвет основного текста : rgba(117, 117, 117, 1) */
+
+/*вторичный цвет: #212121 */
+
+/*акцент: #2196F3 */
+
+/*простой белый: #FFFFFF*/
+
+/*фоновый серый: #2F303A*/
+
+/*контакты футер: rgba(255, 255, 255, 0.6) */
+
+:root {
+    --primary-text-color: rgba(117, 117, 117, 1);
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+    --simply-white: #FFFFFF;
+    --fon-grey: #2F303A;
+    --contacs-footer: rgba(255, 255, 255, 0.6);
+    --simply-black: #000000;
+    --btn-fon: rgba(245, 244, 250, 1);
+    --team-bcg: #F5F4FA;
+    --features-bcg: #E5E5E5;
+    --work-item-border: rgba(238, 238, 238, 1);
+    --header-border: rgba(236, 236, 236, 1);
+    --icon-main-color: #AFB1B8;
+    --icon-bcg-footer: rgba(255, 255, 255, 10%);
+}
+
+:root {
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.akcent {
+    color: var(--accent-color);
+}
+
+.akcent-two {
+    color: var(--simply-white);
+}

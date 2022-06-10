@@ -1,0 +1,38 @@
+.html {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    background-color: var(--simply-white);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* section */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section.no-padding {
+    padding-bottom: 0;
+}
+
+.section.color {
+    background-color: var(--team-bcg);
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
