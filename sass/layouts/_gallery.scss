@@ -1,13 +1,16 @@
 /*gallery*/
+
 .section .gallery {
     display: flex;
     align-items: center;
+}
 
+.gallery-section {
     @media screen and (max-width: 1199px) {
         display: none;
     }
 }
-
+   
 .container .gallery {
     margin-bottom: 0;
 }

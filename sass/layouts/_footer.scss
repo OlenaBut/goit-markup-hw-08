@@ -7,7 +7,18 @@
 }
 
 .footer .container {
-    display: flex;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        text-align: left;
+    }
 }
 
 .footer .logo {
@@ -52,6 +63,12 @@
     margin-bottom: 9px;
 }
 
+.footer .part:not(:last-child) {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+}
+
 .part-title {
     color: var(--simply-white);
     font-weight: 700;
@@ -77,8 +94,8 @@
 }
 
 .part .form-field {
-    display: flex;
     margin-bottom: 0;
+
 }
 
 .part-btn {
@@ -97,6 +114,10 @@
     letter-spacing: 0.06em;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 20px;
+    }
 }
 
 .part:not(:last-child) {
