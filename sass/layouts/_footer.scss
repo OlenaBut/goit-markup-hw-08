@@ -8,15 +8,18 @@
 
 .footer .container {
 
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
         align-items: baseline;
     }
 
     @media screen and (min-width: 1200px) {
-        justify-content: space-between;
         text-align: left;
     }
 }
@@ -43,6 +46,9 @@
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 8px;
+    }
 }
 
 .footer-mail {
@@ -50,6 +56,9 @@
     font-size: 14px;
     line-height: 1.7;
     text-decoration: none;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 8px;
+    }
 }
 
 .footer-tel {
@@ -59,14 +68,14 @@
     text-decoration: none;
 }
 
-.footer .item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
 .footer .part:not(:last-child) {
-    @media screen and (max-width: 768px) {
+    
+    @media screen and (max-width: 1199.98px) {
+        margin-right: auto;
+        margin-left: auto;
         margin-bottom: 60px;
     }
+
 }
 
 .part-title {
@@ -95,12 +104,9 @@
 
 .part .form-field {
     margin-bottom: 0;
-
 }
 
 .part-btn {
-    display: flex;
-    margin-left: 12px;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -115,21 +121,32 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 1199.98px) {
         margin-top: 20px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
     }
 }
 
-.part:not(:last-child) {
-    margin-right: 70px;
-}
+@media screen and (min-width: 1200px) {
 
-.part:nth-child(2) {
-    margin-right: 93px;
-}
+    .part:not(:last-child) {
+        margin-right: 70px;
+    }
 
-.part:last-child {
-    margin-left: auto;
+    .part:nth-child(2) {
+        margin-right: 93px;
+    }
+
+    .part:last-child {
+        margin-left: auto;
+    }
 }
 
 .icon-send {

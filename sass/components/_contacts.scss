@@ -1,8 +1,11 @@
 /*contacts*/
 
 .contacts {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 
     & a:hover,
     & a:focus {
@@ -11,5 +14,9 @@
 }
 
 .contacts__item:not(:last-child) {
-    margin-right: 50px;
+
+    @media screen and (min-width: 480px) {
+        margin-right: 0;
+    }
+
 }

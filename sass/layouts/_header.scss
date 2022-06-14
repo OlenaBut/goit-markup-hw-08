@@ -6,13 +6,26 @@
 
 .header__container {
     position: relative;
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header__mail {
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
 }
 
 .header__mail,
 .header__tel {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
