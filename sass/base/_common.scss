@@ -16,7 +16,7 @@
     margin-top: 0;
     margin-bottom: 0;
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199.98px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -29,7 +29,7 @@
 
 .section.no-padding {
     padding-bottom: 0;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199.98px) {
         padding-bottom: 60px;
     }
 }

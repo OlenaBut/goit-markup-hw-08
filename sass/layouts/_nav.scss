@@ -1,21 +1,19 @@
 /*navigation*/
 
-.nav_list {
-    @media screen and (max-width: 767.98px) {
-        display: none;
+    .nav__list {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
     }
-}
 
 @media screen and (min-width: 768px) {
 
     .nav {
         display: flex;
         margin-right: auto;
-    }
-
-    .nav__list {
-        display: flex;
-        align-items: center;
     }
 
     .nav__item {

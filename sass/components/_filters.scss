@@ -1,14 +1,32 @@
 /*filters*/
 
-.filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 34px;
-}
+ .filter {
+     margin-bottom: 40px;
 
-.filters .item:not(:last-child) {
-    margin-right: 8px;
-}
+     @media screen and (min-width: 768px) {
+         margin-bottom: 30px;
+     }
+
+     @media screen and (min-width: 1200px) {
+         margin-bottom: 50px;
+         ;
+     }
+ }
+
+ .filters {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+
+    @media screen and (min-width: 768px) {
+    justify-content: center;
+    }
+ }
+
+ .filters .item {
+    margin: 4px;
+ }
 
 .filters-btn {
     display: inline-block;

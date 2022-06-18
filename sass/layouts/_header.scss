@@ -6,9 +6,19 @@
 
 .header__container {
     position: relative;
-    @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
+
+    @media screen and (max-width: 767.98px) {
+        height: 60px;
+    }
+
+    @media screen and (max-width: 1199.98px) {
         display: flex;
+        align-items: baseline;
+        justify-content: space-between;
         align-items: center;
+        
     }
 }
 
