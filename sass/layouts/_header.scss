@@ -22,7 +22,7 @@
     }
 }
 
-.header__mail {
+.header .contacts__item:not(:last-child) {
     @media screen and (min-width: 1200px) {
         margin-right: 50px;
     }
@@ -30,12 +30,6 @@
 
 .header__mail,
 .header__tel {
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-    }
-
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
